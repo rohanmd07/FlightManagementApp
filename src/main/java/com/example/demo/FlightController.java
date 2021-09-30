@@ -52,6 +52,13 @@ public class FlightController extends HttpServlet {
 		System.out.println("Your ticket with " +pnrCode + " has been successfully cancelled");
 	}
 	
+	@RequestMapping(path = "/airline/inventory/add", method = RequestMethod.PUT)
+	public void addNewAirline(@RequestParam int flightNumber,@RequestParam String airline,
+			@RequestParam String source,@RequestParam String destination,@RequestParam String startTime,
+			@RequestParam String endTime,@RequestParam String scheduledDays,@RequestParam String instrumentName) {
+		
+	}
+	
     public FlightController() {
         super();
         // TODO Auto-generated constructor stub
